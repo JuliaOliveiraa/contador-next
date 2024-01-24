@@ -1,0 +1,77 @@
+body {
+    margin: none;
+    border: none;
+    padding: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    transition: background-color 0.3s; /* Adicionando transição para suavizar a mudança de cor de fundo */
+  }
+  
+  .dark-mode {
+    background-color: #333; /* Cor de fundo para modo escuro */
+    color: #fff; /* Cor de texto para modo escuro */
+    margin: none;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .contador {
+    font-size: 5rem;
+    margin: auto;
+  }
+  
+  /* Estilo para os botões */
+  .button-container {
+    display: flex;
+    gap: 10px; /* Espaçamento entre os botões */
+  }
+  
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4caf50, #45a049); /* Degrade verde */
+    color: white;
+  }
+  
+  .button.decrement {
+    background: linear-gradient(to right, #f44336, #d43f3a); /* Degrade vermelho */
+  }
+  
+  /* Adicionando hover para um efeito sutil */
+  .button:hover,
+  .button.decrement:hover {
+    opacity: 0.8;
+  }
+  
+  /* Botão Modo Escuro no canto superior direito */
+  .dark-mode-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background: linear-gradient(to right, #4caf50, #45a049); /* Degrade verde */
+    color: white;
+  }
+  
+  .dark-mode-button:hover {
+    opacity: 0.8;
+  }
+  
